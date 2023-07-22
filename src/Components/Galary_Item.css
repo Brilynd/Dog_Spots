@@ -1,0 +1,20 @@
+#Galary_Item_Container {
+  position: absolute;
+  bottom: 0;
+  background-color: #0000006a;
+  width: 100%;
+  border-radius: 12px;
+}
+
+#Galary_Item_Container h1 {
+  margin-left: 10px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#Galary_Item_Container p {
+  color: #FFF;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=Galary_Item.css.map */

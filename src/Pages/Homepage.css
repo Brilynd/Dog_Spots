@@ -1,0 +1,155 @@
+.Jumbotron_wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Choose_Us_Container {
+  width: 90%;
+  margin: 5% auto;
+}
+
+.Choose_Us_Container h1 {
+  text-align: center;
+  color: #736d34;
+  margin-bottom: 3%;
+}
+
+.Choose_Us_Item_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .Choose_Us_Item_Container {
+    display: block;
+  }
+}
+
+#Choose_Us_icon {
+  height: 60%;
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.closedItem {
+  width: 220px;
+  height: 450px;
+  border-radius: 12px;
+  margin-inline: 5px;
+}
+
+.openItem {
+  width: 600px;
+  height: 450px;
+  border-radius: 12px;
+  margin-inline: 5px;
+}
+
+.Galary_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-inline: auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#itemOne {
+  position: relative;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+  background-image: url("https://photos.bringfido.com/attractions/5/1/4/27415/27415_67151.jpg?size=tile&density=2x");
+  background-size: cover;
+  cursor: pointer;
+}
+
+#itemTwo {
+  position: relative;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+  background-image: url("https://fox5sandiego.com/wp-content/uploads/sites/15/2022/07/Carlsbad-dog-park-072822-copy-e1659016132684.jpg?strip=1&w=640");
+  background-size: cover;
+  cursor: pointer;
+}
+
+#itemThree {
+  position: relative;
+  background-image: url("https://topdogparks.com/wp-content/uploads/2022/09/north-caroline-dog-parks-near-me.png");
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Galary_Header {
+  text-align: center;
+  color: #736D34;
+}
+
+#Galary_CTA_Btn {
+  border: 2px solid transparent;
+  color: #fff;
+  background-color: #736D34;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+  margin-bottom: 5%;
+}
+
+#Galary_CTA_Btn:hover {
+  background-color: #FFF;
+  color: #736d34;
+  border: 2px solid #736D34;
+  cursor: pointer;
+}
+
+#sponser_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #736D34;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#sponser_container div {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#sponser_container div img {
+  display: block;
+  max-width: 200px;
+  max-height: 55px;
+  width: auto;
+  height: auto;
+}
+/*# sourceMappingURL=Homepage.css.map */

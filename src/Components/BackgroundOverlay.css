@@ -1,0 +1,60 @@
+#Background_Container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: -1;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#background_darken {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.301);
+  z-index: 0;
+}
+
+#website_directions {
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 11%;
+  z-index: 1;
+  margin: 0;
+}
+
+#website_directions_icon {
+  position: absolute;
+  color: #FFF;
+  z-index: 1;
+  width: 100%;
+  bottom: 6%;
+}
+
+#video_header {
+  position: absolute;
+  top: 20%;
+  z-index: 1;
+  font-size: 32px;
+  width: 100%;
+  left: 50%;
+  /* Set the left position to 50% */
+  color: #FFF;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+/*# sourceMappingURL=BackgroundOverlay.css.map */
