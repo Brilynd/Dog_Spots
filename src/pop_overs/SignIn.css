@@ -1,0 +1,115 @@
+.SignIn_Container {
+  position: absolute;
+  height: 35vh;
+  width: 25vw;
+  background-color: #FFFFFF;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.SignIn_Container div {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.SignIn_Container div #close_icon {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.SignIn_Container div h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #8E8741;
+}
+
+.SignIn_Container div input {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 15px;
+  border: 1.5px solid #D1D1D1;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+
+.SignIn_Container div input::-webkit-input-placeholder {
+  color: #D1D1D1;
+}
+
+.SignIn_Container div input:-ms-input-placeholder {
+  color: #D1D1D1;
+}
+
+.SignIn_Container div input::-ms-input-placeholder {
+  color: #D1D1D1;
+}
+
+.SignIn_Container div input::placeholder {
+  color: #D1D1D1;
+}
+
+.SignIn_Container div button {
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #8E8741;
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.SignIn_Container div button:hover {
+  background-color: #FFFFFF;
+  color: #8E8741;
+  border: 2px solid #8E8741;
+}
+
+.SignIn_Container div div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.SignIn_Container div #SignUp_Regular_Text {
+  font-size: 12px;
+  color: #6D6D6D;
+}
+
+.SignIn_Container div a {
+  margin-left: 5px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #9E9428;
+  font-weight: 600;
+}
+/*# sourceMappingURL=SignIn.css.map */
