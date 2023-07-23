@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./SignUp.css"
+import Primary_Button from "../Components/Primary_Button";
 const SignUp = ({close,submit}) =>{
 const[password,setPassword] = useState("");
 const[confirmPassword,setConfirmPassword] = useState("");
@@ -23,7 +24,7 @@ const createAccount = () =>{
 return(
     <div className="SignUp_Container">
         <div>
-        <FontAwesomeIcon icon={faTimes} id="close_icon"/>
+        <FontAwesomeIcon icon={faTimes} id="close_icon" onClick={()=>{close()}}/>
         <h1>Signup</h1>
         <input type="text" placeholder="Email"/>
         <input type="password" name="" id="" placeholder="Password"/>

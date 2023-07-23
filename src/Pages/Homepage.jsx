@@ -11,28 +11,50 @@ import {
 import { useState } from "react";
 import Galary_Item from "../Components/Galary_Item";
 import SignUp from "../pop_overs/SignUp";
+import SignIn from "../pop_overs/SignIn";
+import DarkenedOverlay from "../Components/DarkenedOverlay";
 const Homepage = () =>{
     const [selectedItem,setSelectedItem] = useState(0);
     const [signUpPopup,setSignUpPopup] = useState(false);
     const [signInPopup,setSignInPopup] = useState(false);
     const openSignUp = () =>{
         setSignUpPopup(true);
+        document.body.style.overflow = "hidden";
     }
     const closeSignUp = () =>{
         setSignUpPopup(false);
+        document.body.style.overflow = "auto";
     }
     const openSignIn = () =>{
-        setSignInPopup(true)
+        setSignInPopup(true);
+        document.body.style.overflow = "hidden";
     }
     const closeSignIn = () =>{
-        setSignInPopup(false)
+        setSignInPopup(false);
+        document.body.style.overflow = "auto";
+    }
+    const switchToSignIn = () =>{
+        setSignUpPopup(false);
+        setSignInPopup(true);
+    }
+    const switchToSignUp = () =>{
+        setSignInPopup(false);
+        setSignUpPopup(true);
     }
     return(
-        <div className="homepage_wrapper">
-            {signUpPopup&&<SignUp/>}
+        <div className="homepage_wrapper" id={signUpPopup&&"locked"}>
+            
             <div className="Jumbotron_wrapper">
             <BackgroundOverlay/>
             <Navbar logginIn={true} openSignUp={()=>openSignUp()} openSignIn={()=>openSignIn()}/>
+            {signInPopup&&<DarkenedOverlay/>}
+            {signUpPopup&&<DarkenedOverlay/>}
+         
+            {signUpPopup&&<SignUp close={()=>closeSignUp()} switch={()=>switchToSignIn()}/>}
+            {signInPopup&&<SignIn close={()=>closeSignIn()} switch={()=>switchToSignUp()}/>}
+
+            
+    
             </div>
             <div className="Choose_Us_Container">
                 <h1>Why Choose Us?</h1>

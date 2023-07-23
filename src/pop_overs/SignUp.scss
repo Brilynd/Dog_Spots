@@ -1,23 +1,86 @@
 .SignUp_Container{
     position: absolute;
     height: 40vh;
-    width: 30vw;
+    width: 25vw;
     background-color:#FFFFFF ;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     div{
         position: relative;
         display: inline-block;
         width: 100%;
         height: 100%;
+
         #close_icon{
             height: 20px;
             width: 20px;
             position: absolute;
             left: 10px;
-
+            top:10px
         }
+        h1{
+            font-size: 28px;
+            text-align: center;
+            color:#8E8741;
+        }
+        input{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            padding-top:2% ;
+            padding-bottom:2% ;
+            margin-bottom: 15px;
+            border:1.5px solid #D1D1D1 ;
+            padding-left: 10px;
+            border-radius: 6px;
+            
+        }
+        input::placeholder{
+            color: #D1D1D1;
+        }
+        button{
+            width: 140px;
+            height: 40px;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: #8E8741;
+            border: 2px solid transparent;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 8px;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+        button:hover{
+            background-color: #FFFFFF;
+            color: #8E8741;
+            border:2px solid #8E8741
+        }
+        div{
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: fit-content;
+            width: fit-content;
+            text-align: center;
+            margin: 0 auto;
+        }
+        #SignUp_Regular_Text{
+            font-size: 12px;
+            color: #6D6D6D;;
+        }
+        a{
+            margin-left: 5px;
+            font-size: 12px;
+            text-decoration: none;
+            color: #9E9428;
+            font-weight: 600;
+        }
+
     }
     
 }

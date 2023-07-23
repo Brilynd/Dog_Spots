@@ -152,4 +152,9 @@
   width: auto;
   height: auto;
 }
+
+#locked {
+  overflow: hidden;
+  overflow-y: hidden;
+}
 /*# sourceMappingURL=Homepage.css.map */
